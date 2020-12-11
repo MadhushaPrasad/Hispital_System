@@ -1,0 +1,76 @@
+.btnCreate {
+    width: 120px;
+    height: 40px;
+    color: #FFFFFF;
+    border-radius: 13px;
+    background-image: linear-gradient(to right, #1A129F, #6156F9);
+    font-size: 12px;
+}
+
+.btnCancel {
+    width: 120px;
+    height: 40px;
+    color: #FFFFFF;
+    border-radius: 13px;
+    background-image: linear-gradient(to right, #9F1212, #F95656);
+    font-size: 12px;
+}
+
+.btnUpdate {
+    width: 120px;
+    height: 40px;
+    color: #FFFFFF;
+    border-radius: 13px;
+    background-image: linear-gradient(to right, #ECE400, #FBFF82);
+    font-size: 12px;
+}
+
+.btnSearch {
+    width: 120px;
+    height: 40px;
+    color: #FFFFFF;
+    border-radius: 13px;
+    background-image: linear-gradient(to right, darkgreen, lightgreen) !important;
+    font-size: 12px;
+}
+
+
+@media only screen and  (max-device-width: 768px) {
+
+    .btnCreate {
+        width: 115px !important;
+        height: 50px !important;
+        color: #FFFFFF !important;
+        border-radius: 13px !important;
+        background-image: linear-gradient(to right, #1A129F, #6156F9) !important;
+        font-size: 10px !important;
+    }
+
+    .btnCancel {
+        width: 115px !important;
+        height: 50px !important;
+        color: #FFFFFF !important;
+        border-radius: 13px !important;
+        background-image: linear-gradient(to right, #9F1212, #F95656) !important;
+        font-size: 10px !important;
+    }
+
+    .btnUpdate {
+        width: 115px !important;
+        height: 50px !important;
+        color: #FFFFFF !important;
+        border-radius: 13px !important;
+        background-image: linear-gradient(to right, #ECE400, #FBFF82) !important;
+        font-size: 10px !important;
+    }
+
+    .btnSearch {
+        width: 115px !important;
+        height: 40px !important;
+        color: #FFFFFF !important;
+        border-radius: 13px !important;
+        background-image: linear-gradient(to right, darkgreen, lightgreen) !important;
+        font-size: 10px !important;
+    }
+}
+

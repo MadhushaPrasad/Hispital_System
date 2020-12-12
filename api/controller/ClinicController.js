@@ -65,6 +65,13 @@ function updateClinic() {
     const openingTime = $('#openingTime').val();
     const closeTime = $('#closingTime').val();
     const status = $('#status').val();
+    console.log(clinicName);
+    console.log(location);
+    console.log(OpeningDate);
+    console.log(ClosingDate);
+    console.log(openingTime);
+    console.log(closeTime);
+    console.log(status);
 
     if (clinicName === "" || location === "" || OpeningDate === "" || ClosingDate === "" || openingTime === "" ||
         closeTime === "") {
@@ -95,7 +102,9 @@ function updateClinic() {
                 console.log(res);
                 swal("ERROR!", "You clicked Clinic Not Updated.!", "error");
             }
+            getAllClinic();
         }).fail(function (xhr) {
+            console.log(xhr);
             toastr["error"](xhr);
         });
     }

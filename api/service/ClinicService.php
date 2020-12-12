@@ -44,6 +44,25 @@ switch ($method) {
                 $res = $clinicBO->addClinic($newClinic);
                 echo $res;
                 break;
+            case "update" :
+                $clinicID = $_POST["clinicID"];
+                $clinicName = $_POST["clinicName"];
+                $location = $_POST["location"];
+                $openingDate = $_POST["OpeningDate"];
+                $closingDate = $_POST["ClosingDate"];
+                $openingTime = $_POST["openingTime"];
+                $closeTime = $_POST["closeTime"];
+                $status = $_POST["status"];
+                if ($status == '1') {
+                    $status = "Closed";
+                } else {
+                    $status = "Oppened";
+                }
+                $newClinic = new Clinic($clinicName, $location, $openingDate, $closingDate, $openingTime, $closeTime, $status);
+                $newClinic->setClinicId($clinicID);
+                $res = $clinicBO->updateClinic($newClinic);
+                echo $res;
+                break;
         }
         break;
 }

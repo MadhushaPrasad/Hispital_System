@@ -27,7 +27,19 @@ class ClinicBoImpl implements ClinicBo
 
     function updateClinic(Clinic $clinic)
     {
-        // TODO: Implement updateClinic() method.
+        $connection = (new DBConnection())->getConnection();
+        $clinicRepo = new ClinicRepositoryImpl();
+        $clinicRepo->setConnection($connection);
+        $newNlinic = new Clinic($clinic->getClinicName(), $clinic->getClinicLocation(),
+            $clinic->getOpeningDate(), $clinic->getClosingDate(), $clinic->getOpeningTime(),
+            $clinic->getClosingTime(), $clinic->getStatus());
+        $newNlinic->setClinicId($clinic->getClinicId());
+        $res = $clinicRepo->updateClinic($newNlinic);
+        if ($res) {
+            return true;
+        } else {
+            return $connection->error;
+        }
     }
 
     function deleteClinic($clinicID)

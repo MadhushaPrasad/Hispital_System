@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8a74fa6-b356-43eb-8e73-a147b695347c" name="Default Changelist" comment="" />
+    <list default="true" id="f8a74fa6-b356-43eb-8e73-a147b695347c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/bo/impl/ClinicBoImpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/bo/impl/ClinicBoImpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/controller/ClinicController.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controller/ClinicController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/repository/impl/ClinicRepositoryImpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/repository/impl/ClinicRepositoryImpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/service/ClinicService.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/service/ClinicService.php" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,35 +25,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/controller/ClinicController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="170" column="80" selection-start-line="170" selection-start-column="80" selection-end-line="170" selection-end-column="80" />
+            <state relative-caret-position="1000">
+              <caret line="104" column="27" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
               <folding>
                 <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
-                <element signature="e#86#92#0" expanded="true" />
-                <element signature="e#92#98#0" expanded="true" />
-                <element signature="e#98#104#0" expanded="true" />
+                <element signature="e#422#428#0" expanded="true" />
+                <element signature="e#428#434#0" expanded="true" />
+                <element signature="e#434#440#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/controller/RegisterController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-882">
-              <caret line="3" column="15" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/includes/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="26" column="70" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -55,17 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/service/ClinicService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/pages/Clinic.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2600">
-              <caret line="24" column="79" selection-start-line="24" selection-start-column="79" selection-end-line="24" selection-end-column="79" />
+            <state relative-caret-position="24">
+              <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -73,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/bo/impl/ClinicBoImpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+            <state relative-caret-position="288">
+              <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -82,8 +61,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/repository/impl/ClinicRepositoryImpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-72">
-              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            <state relative-caret-position="208">
+              <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/repository/ClinicRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" column="47" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -143,15 +131,15 @@
         <option value="$PROJECT_DIR$/views/pages/Appointment.php" />
         <option value="$PROJECT_DIR$/views/includes/header.php" />
         <option value="$PROJECT_DIR$/api/model/Clinic.php" />
-        <option value="$PROJECT_DIR$/api/db/DBConnection.php" />
         <option value="$PROJECT_DIR$/api/repository/ClinicBo.php" />
         <option value="$PROJECT_DIR$/api/bo/ClinicBo.php" />
-        <option value="$PROJECT_DIR$/api/repository/ClinicRepository.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/api/bo/impl/ClinicBoImpl.php" />
-        <option value="$PROJECT_DIR$/api/repository/impl/ClinicRepositoryImpl.php" />
-        <option value="$PROJECT_DIR$/api/service/ClinicService.php" />
         <option value="$PROJECT_DIR$/views/pages/Clinic.php" />
+        <option value="$PROJECT_DIR$/api/db/DBConnection.php" />
+        <option value="$PROJECT_DIR$/api/bo/impl/ClinicBoImpl.php" />
+        <option value="$PROJECT_DIR$/api/repository/ClinicRepository.php" />
+        <option value="$PROJECT_DIR$/api/service/ClinicService.php" />
+        <option value="$PROJECT_DIR$/api/repository/impl/ClinicRepositoryImpl.php" />
         <option value="$PROJECT_DIR$/api/controller/ClinicController.js" />
       </list>
     </option>
@@ -167,14 +155,14 @@
     <option name="width" value="1026" />
     <option name="height" value="554" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,10 +170,61 @@
               <item name="Hospital_system" type="b2602c69:ProjectViewProjectNode" />
               <item name="Hospital_system" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Hospital_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospital_system" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospital_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospital_system" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="bo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospital_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospital_system" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="bo" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospital_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospital_system" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospital_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospital_system" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospital_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospital_system" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospital_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospital_system" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hospital_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hospital_system" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,19 +238,19 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\Hospital_system\assets\css" />
-      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\Hospital_system\api\repository" />
-      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\Hospital_system\views\pages" />
-      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\Hospital_system\api\controller" />
-      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\Hospital_system\views" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Madhusha Prasad\IdeaProjects\Hospital_system\assets\js" />
       <recent name="C:\Users\Madhusha Prasad\IdeaProjects\Hospital_system\views\pages" />
       <recent name="C:\Users\Madhusha Prasad\IdeaProjects\Hospital_system\views" />
       <recent name="C:\Users\Madhusha Prasad\IdeaProjects\Hospital_system\views\" />
       <recent name="C:\Users\Madhusha Prasad\IdeaProjects\Hospital_system\views\pages\" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\Hospital_system" />
+      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\Hospital_system\assets\css" />
+      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\Hospital_system\api\repository" />
+      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\Hospital_system\views\pages" />
+      <recent name="C:\Users\Madhusha Prasad\IdeaProjects\Hospital_system\api\controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -260,17 +299,27 @@
       <workItem from="1607420808414" duration="4824000" />
       <workItem from="1607570182142" duration="7516000" />
       <workItem from="1607612258502" duration="19200000" />
-      <workItem from="1607682964785" duration="8138000" />
+      <workItem from="1607682964785" duration="8511000" />
+      <workItem from="1607691617148" duration="1712000" />
+      <workItem from="1607751353191" duration="3282000" />
     </task>
+    <task id="LOCAL-00001" summary="clinic page finished">
+      <created>1607691357693</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607691357694</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75398000" />
+    <option name="totallyTimeSpent" value="80765000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30937973" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3184569" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -288,7 +337,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="File Transfer" order="9" weight="0.32941177" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -303,6 +352,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="clinic page finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="clinic page finished" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/assets/images/logoSmall.png">
@@ -464,21 +523,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/db/DBConnection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/bo/ClinicBo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/repository/ClinicRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
@@ -497,58 +542,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/bo/impl/ClinicBoImpl.php">
+    <entry file="file://$PROJECT_DIR$/api/controller/RegisterController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+        <state relative-caret-position="72">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/repository/impl/ClinicRepositoryImpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/views/includes/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
+        <state relative-caret-position="600">
           <caret line="26" column="70" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/service/ClinicService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/pages/Clinic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2600">
+        <state relative-caret-position="576">
           <caret line="24" column="79" selection-start-line="24" selection-start-column="79" selection-end-line="24" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/db/DBConnection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repository/ClinicRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/impl/ClinicBoImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/service/ClinicService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repository/impl/ClinicRepositoryImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/controller/ClinicController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="170" column="80" selection-start-line="170" selection-start-column="80" selection-end-line="170" selection-end-column="80" />
+        <state relative-caret-position="1000">
+          <caret line="104" column="27" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
           <folding>
             <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
-            <element signature="e#86#92#0" expanded="true" />
-            <element signature="e#92#98#0" expanded="true" />
-            <element signature="e#98#104#0" expanded="true" />
+            <element signature="e#422#428#0" expanded="true" />
+            <element signature="e#428#434#0" expanded="true" />
+            <element signature="e#434#440#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/controller/RegisterController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-882">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="15" />
         </state>
       </provider>
     </entry>

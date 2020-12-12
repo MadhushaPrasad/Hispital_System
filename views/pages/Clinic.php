@@ -113,7 +113,7 @@
                             <th scope="col">Opening Time</th>
                             <th scope="col">Closing Time</th>
                             <th scope="col">Status</th>
-                            <th scope="col">hhg</th>
+                            <th scope="col"> </th>
                         </tr>
                         </thead>
                         <tbody id="clinicBody">

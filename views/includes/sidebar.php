@@ -11,11 +11,11 @@
 
     <div class="sidebar">
         <ul>
-            <li><a href="../pages/Dashboard.php" class="active">
+            <li><a href="../pages/Dashboard.php" id="dashboardLink" class="active">
                     <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
                     <span class="title">Dashboard</span>
                 </a></li>
-            <li><a href="../pages/Clinic.php">
+            <li><a href="../pages/Clinic.php" id="clinicLink">
                     <span class="icon"><i class="fas fa-clinic-medical"></i></span>
                     <span class="title">Clinic</span>
                 </a></li>

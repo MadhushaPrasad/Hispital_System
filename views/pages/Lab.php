@@ -17,7 +17,10 @@
 
     <link rel="stylesheet" href="../../assets/css/sidebar.css">
 
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 <body>
@@ -37,10 +40,11 @@
                         <form id="mail-form" method="post" action="">
                             <div class="row mb-2">
                                 <div class="col-lg-3 col-sm-12 ">
-                                    <input type="text" class="form-control" placeholder="Patient ID" name="id">
+                                    <input type="text" id="nic" class="form-control" placeholder="Patient NIC"
+                                           name="nic">
                                 </div>
                                 <div class="col-lg-3 col-sm-12 mt-md-2 mt-lg-0">
-                                    <select class="bg-white custom-select form-lg">
+                                    <select id="mainTopic" class="bg-white custom-select form-lg">
                                         <option value="" disabled selected>Choose your option</option>
                                         <option value="1">Option 1</option>
                                         <option value="2">Option 2</option>
@@ -48,7 +52,7 @@
                                     </select>
                                 </div>
                                 <div class="col-lg-3 col-sm-12 mt-md-2 mt-lg-0">
-                                    <select class="bg-white custom-select form-lg">
+                                    <select id="subTopic" class="bg-white custom-select form-lg">
                                         <option value="" disabled selected>Choose your option</option>
                                         <option value="1">Option 1</option>
                                         <option value="2">Option 2</option>
@@ -62,16 +66,16 @@
                                             <div class="input-group-prepend">
                                                 <div class="input-group-text">Rs:</div>
                                             </div>
-                                            <input type="text" class="form-control" id="inlineFormInputGroup"
+                                            <input type="text" class="form-control" id="values"
                                                    placeholder="Value">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-12 d-flex justify-content-around mt-4">
-                                <button class="btn btnCancel">Cancel</button>
-                                <button class="btn btnUpdate">update</button>
-                                <button class="btn btnCreate">Create</button>
+                                <button type="button" class="btn btnCancel">Cancel</button>
+                                <button type="button" onclick="updateLab()" class="btn btnUpdate">update</button>
+                                <button type="button" onclick="addLab()" class="btn btnCreate">Create</button>
                             </div>
                         </form>
                     </div>
@@ -89,40 +93,10 @@
                             <th scope="col">Main Topic</th>
                             <th scope="col">Sub Topic</th>
                             <th scope="col">Rs</th>
+                            <th scope="col"></th>
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                        </tr>
+                        <tbody id="labBody">
                         </tbody>
                     </table>
                     <nav aria-label="Page navigation example" class="offset-lg-4 offset-md-3">
@@ -149,5 +123,6 @@
 <script src="../../assets/js/bootstrap.min.js"></script>
 <script src="../../assets/js/mdb.min.js"></script>
 <script src="../../assets/js/sidebar.js" type="application/javascript"></script>
+<script src="../../api/controller/LabController.js" type="application/javascript"></script>
 </body>
 </html>

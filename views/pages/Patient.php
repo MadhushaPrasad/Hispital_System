@@ -212,5 +212,6 @@
 <script src="../../assets/js/bootstrap.min.js"></script>
 <script src="../../assets/js/mdb.min.js"></script>
 <script src="../../assets/js/sidebar.js" type="application/javascript"></script>
+<script src="../../api/controller/PatientController.js" type="application/javascript"></script>
 </body>
 </html>

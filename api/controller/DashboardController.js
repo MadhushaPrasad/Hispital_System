@@ -5,10 +5,11 @@ $(document).ready(function () {
 });
 
 
+
 function getAllAppointment() {
-    for (var i = 1;i<=10;i++){
+    for (var i = 1; i <= 10; i++) {
         $('#appointmentBody').append(" <tr>\n" +
-            "                            <th scope=\"row\">"+i+"</th>\n" +
+            "                            <th scope=\"row\">" + i + "</th>\n" +
             "                            <td>Madhusha</td>\n" +
             "                            <td>OPD</td>\n" +
             "                            <td>Prasad</td>\n" +
@@ -21,7 +22,7 @@ function getAllAppointment() {
 function getAllDoctors() {
     for (var i = 1; i <= 10; i++) {
         $('#doctorBody').append(" <tr>\n" +
-            "                            <th scope=\"row\">"+i+"</th>\n" +
+            "                            <th scope=\"row\">" + i + "</th>\n" +
             "                            <td>Madhusha Prasad</td>\n" +
             "                            <td>0715546544</td>\n" +
             "                            <td>43/2,Kalutara</td>\n" +
@@ -34,9 +35,9 @@ function getAllDoctors() {
 }
 
 function getAllOutofStockmedic() {
-    for (var i = 1;i<=10;i++){
+    for (var i = 1; i <= 10; i++) {
         $('#outOfStock').append(" <tr>\n" +
-            "                            <th scope=\"row\">"+i+"</th>\n" +
+            "                            <th scope=\"row\">" + i + "</th>\n" +
             "                            <td>Penadol</td>\n" +
             "                            <td>Penadol</td>\n" +
             "                            <td>10g</td>\n" +

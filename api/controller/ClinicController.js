@@ -7,8 +7,15 @@ $(window).ready(function () {
 
     $('table tbody tr').click(function () {
         var clinicID = $($(this).children()[0]).text();
-        console.log(clinicID);
     });
+
+    var slideMenueList = $('.sidebar ul li');
+
+    slideMenueList.children()[0].attributes[2].nodeValue = '';
+
+    slideMenueList.children()[1].classList.add('active')
+
+
 });
 
 function addClinic() {
@@ -65,13 +72,6 @@ function updateClinic() {
     const openingTime = $('#openingTime').val();
     const closeTime = $('#closingTime').val();
     const status = $('#status').val();
-    console.log(clinicName);
-    console.log(location);
-    console.log(OpeningDate);
-    console.log(ClosingDate);
-    console.log(openingTime);
-    console.log(closeTime);
-    console.log(status);
 
     if (clinicName === "" || location === "" || OpeningDate === "" || ClosingDate === "" || openingTime === "" ||
         closeTime === "") {
@@ -143,7 +143,7 @@ function clearFilledData() {
     setTimeout(function () {
         location.reload();
         console.log("The page will now refresh");
-    }, 5000);
+    }, 1500);
 }
 
 function editRow() {

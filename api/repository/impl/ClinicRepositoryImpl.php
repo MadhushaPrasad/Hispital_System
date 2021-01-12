@@ -37,11 +37,14 @@ class ClinicRepositoryImpl implements ClinicRepository
 
     function updateClinic(Clinic $clinic): bool
     {
-        $response = $this->connection->query("UPDATE clinic SET clinic_id='{$clinic->getClinicId()}',clinic_name='{$clinic->getClinicName()}',clinic_location ='{$clinic->getClinicLocation()}',opening_date = '{$clinic->getOpeningDate()}',closing_date='{$clinic->getClosingDate()}',
-                    opening_time = '{$clinic->getOpeningTime()}',closing_time = '{$clinic->getClosingTime()}',status = '{$clinic->getStatus()}' WHERE clinic_id = '{$clinic->getClinicId()}'");
-        if ($response>0  && $this->connection->affected_rows>0){
+        $response = $this->connection->query("UPDATE clinic SET clinic_id='{$clinic->getClinicId()}',
+                                clinic_name='{$clinic->getClinicName()}',clinic_location ='{$clinic->getClinicLocation()}',
+                                opening_date = '{$clinic->getOpeningDate()}',closing_date='{$clinic->getClosingDate()}',
+                                opening_time = '{$clinic->getOpeningTime()}',closing_time = '{$clinic->getClosingTime()}',
+                                status = '{$clinic->getStatus()}' WHERE clinic_id = '{$clinic->getClinicId()}'");
+        if ($response > 0 && $this->connection->affected_rows > 0) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }

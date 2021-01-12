@@ -26,24 +26,24 @@ session_start();
         <div class="col-md-9 register-right">
             <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#doctorLogin" role="tab"
                        aria-controls="home"
-                       aria-selected="true">Patients</a>
+                       aria-selected="true">Doctor</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#adminLogin" role="tab"
                        aria-controls="profile"
                        aria-selected="false">Admin</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#loginReception" role="tab"
                        aria-controls="reception"
                        aria-selected="false">Reception</a>
                 </li>
             </ul>
 
             <!--      patients form-->
-            <div class="tab-content" id="myTabContent">
+            <div class="tab-content" id="doctorLogin">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <h3 class="register-heading">Login as a Doctor</h3>
                     <div class="row register-form">
@@ -82,7 +82,7 @@ session_start();
 
 
                 <!--        Admin form-->
-                <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="tab-pane fade show" id="adminLogin" role="tabpanel" aria-labelledby="profile-tab">
                     <h3 class="register-heading">Login as a Admin</h3>
                     <div class="row register-form">
                         <form action="#" style="height: auto;width: 88%;margin-top: 30px">
@@ -108,7 +108,7 @@ session_start();
                 <!--Admin form End-->
 
                 <!--        Reception form-->
-                <div class="tab-pane fade show" id="reception" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="tab-pane fade show" id="loginReception" role="tabpanel" aria-labelledby="profile-tab">
                     <h3 class="register-heading">Login as a Reception</h3>
                     <div class="row register-form">
                         <form action="#" style="height: auto;width: 88%;margin-top: 30px">

@@ -2,6 +2,8 @@
 
 require_once __DIR__ . '/../LabBo.php';
 require_once __DIR__ . '/../../model/Lab.php';
+require_once __DIR__ . '/../../model/MainTopic.php';
+require_once __DIR__ . '/../../model/SubTopic.php';
 require_once __DIR__ . '/../../repository/impl/LabRepositoryImpl.php';
 require_once __DIR__ . '/../../db/DBConnection.php';
 
@@ -13,7 +15,7 @@ class LabBoImpl implements LabBo
         $labRepo = new LabRepositoryImpl();
         $connection = (new DBConnection())->getConnection();
         $labRepo->setConnection($connection);
-        $newLab = new Lab($lab->getPatienNIC(),$lab->getMainTopic(),$lab->getSubTopic(),$lab->getValue());
+        $newLab = new Lab($lab->getPatienNIC(), $lab->getMainTopic(), $lab->getSubTopic(), $lab->getValue());
         $res = $labRepo->addLab($newLab);
         if ($res) {
             return true;
@@ -27,7 +29,7 @@ class LabBoImpl implements LabBo
         $labRepo = new LabRepositoryImpl();
         $connection = (new DBConnection())->getConnection();
         $labRepo->setConnection($connection);
-        $updateLab = new Lab($lab->getPatienNIC(),$lab->getMainTopic(),$lab->getSubTopic(),$lab->getValue());
+        $updateLab = new Lab($lab->getPatienNIC(), $lab->getMainTopic(), $lab->getSubTopic(), $lab->getValue());
         $updateLab->setLabId($lab->getLabId());
         $res = $labRepo->updateLab($updateLab);
         if ($res) {
@@ -62,5 +64,23 @@ class LabBoImpl implements LabBo
         $labRepo->setConnection($connection);
         $labArray = $labRepo->getAllLab();
         return $labArray;
+    }
+
+    function getAllMain()
+    {
+        $labRepo = new LabRepositoryImpl();
+        $connection = (new DBConnection())->getConnection();
+        $labRepo->setConnection($connection);
+        $mainArray = $labRepo->getAllMain();
+        return $mainArray;
+    }
+
+    function getAllSub()
+    {
+        $labRepo = new LabRepositoryImpl();
+        $connection = (new DBConnection())->getConnection();
+        $labRepo->setConnection($connection);
+        $subArray = $labRepo->getAllSub();
+        return $subArray;
     }
 }

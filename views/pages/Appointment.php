@@ -41,6 +41,11 @@
                             <button class="btn btnSearch" style="margin-top: 0!important;">Search</button>
                         </div>
                         <div class="row mb-2">
+                            <div class="col-lg-6 col-sm-6">
+                                <input type="text" class="form-control" placeholder="Patient NIC" name="pNic">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
                             <div class="col-lg-2 col-sm-12 mb-lg-3 mb-sm-3">
                                 <input class="form-control" type="text" onfocus="(this.type='date')"
                                        placeholder="Appoinment Date"

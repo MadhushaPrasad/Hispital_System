@@ -45,10 +45,8 @@
                                            name="charge">
                                     <div class="row">
                                         <div class="col-lg-5 col-sm-12 input-group mt-2 pl-0 ml-3">
-                                            <select class="custom-select" id="department">
+                                            <select class="custom-select" id="clinicName">
                                                 <option selected>Clinic</option>
-                                                <option value="1">OPD</option>
-                                                <option value="2">Surgery</option>
                                             </select>
                                         </div>
                                         <div class="col-lg-5 col-md-12 col-sm-12 mt-2 pl-0 pr-0 ml-md-3">

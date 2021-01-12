@@ -45,18 +45,12 @@
                                 </div>
                                 <div class="col-lg-3 col-sm-12 mt-md-2 mt-lg-0">
                                     <select id="mainTopic" class="bg-white custom-select form-lg">
-                                        <option value="" disabled selected>Choose your option</option>
-                                        <option value="1">Option 1</option>
-                                        <option value="2">Option 2</option>
-                                        <option value="3">Option 3</option>
+
                                     </select>
                                 </div>
                                 <div class="col-lg-3 col-sm-12 mt-md-2 mt-lg-0">
                                     <select id="subTopic" class="bg-white custom-select form-lg">
-                                        <option value="" disabled selected>Choose your option</option>
-                                        <option value="1">Option 1</option>
-                                        <option value="2">Option 2</option>
-                                        <option value="3">Option 3</option>
+
                                     </select>
                                 </div>
                                 <div class="col-lg-3 col-sm-12 mt-md-2 mt-lg-0">

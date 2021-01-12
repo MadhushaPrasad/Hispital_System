@@ -2,6 +2,8 @@
 
 require_once __DIR__ . '/../LabRepository.php';
 require_once __DIR__ . '/../../model/Lab.php';
+require_once __DIR__ . '/../../model/SubTopic.php';
+require_once __DIR__ . '/../../model/MainTopic.php';
 
 class LabRepositoryImpl implements LabRepository
 {
@@ -55,6 +57,18 @@ class LabRepositoryImpl implements LabRepository
     function getAllLab(): array
     {
         $resultSet = $this->connection->query("SELECT * FROM lab");
+        return $resultSet->fetch_all();
+    }
+
+    function getAllMain(): array
+    {
+        $resultSet = $this->connection->query("SELECT * FROM mainTopic");
+        return $resultSet->fetch_all();
+    }
+
+    function getAllSub(): array
+    {
+        $resultSet = $this->connection->query("SELECT * FROM subTopic");
         return $resultSet->fetch_all();
     }
 }

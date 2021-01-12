@@ -52,6 +52,15 @@
                         <div class="row">
                             <div class="col-lg-2 col-sm-12">
                                 <div class="input-group mb-3">
+                                    <select class="custom-select" id="clinic">
+                                        <option selected>Clinic</option>
+                                        <option value="1">Clinic01</option>
+                                        <option value="2">Clinic02</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-12">
+                                <div class="input-group mb-3">
                                     <select class="custom-select" id="gender">
                                         <option selected>Blood Type</option>
                                         <option value="1">Male</option>

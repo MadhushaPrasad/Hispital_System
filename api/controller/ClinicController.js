@@ -15,7 +15,6 @@ $(window).ready(function () {
 
     slideMenueList.children()[1].classList.add('active')
 
-
 });
 
 function addClinic() {

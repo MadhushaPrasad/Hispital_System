@@ -13,4 +13,8 @@ interface LabBo
     function searchLab($labID);
 
     function getAllLabs();
+
+    function getAllMain();
+
+    function getAllSub();
 }

@@ -10,6 +10,8 @@ $(document).ready(function () {
     });
 
     getAllLabs();
+    getAllMainTopic();
+    getAllSubTopic();
 });
 
 function addLab() {
@@ -177,5 +179,41 @@ function deleteLab(id) {
         } else {
             swal("Your imaginary Data is safe!");
         }
+    });
+}
+
+function getAllMainTopic() {
+    var jsonConfig = {
+        url: "../../api/service/LabService.php?action=getAllMain",
+        method: "GET",
+        async: true,
+        dataType: "JSON"
+    };
+    $.ajax(jsonConfig).done(function (res) {
+        var mainTitles = $('#mainTopic');
+        mainTitles.append(' <option selected>Choose your option</option>');
+        for (var i in res) {
+            mainTitles.append("<option value=" + res[i][1] + ">" + res[i][1] + "</option>");
+        }
+    }).fail(function (xhr) {
+        toastr["error"](xhr);
+    });
+}
+
+function getAllSubTopic() {
+    var jsonConfig = {
+        url: "../../api/service/LabService.php?action=getAllSub",
+        method: "GET",
+        async: true,
+        dataType: "JSON"
+    };
+    $.ajax(jsonConfig).done(function (res) {
+        var subTitles = $('#subTopic');
+        subTitles.append(' <option selected>Choose your option</option>');
+        for (var i in res) {
+            subTitles.append("<option value=" +res[i][1]+ ">" + res[i][1] + "</option>");
+        }
+    }).fail(function (xhr) {
+        toastr["error"](xhr);
     });
 }

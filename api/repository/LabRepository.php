@@ -14,4 +14,8 @@ interface LabRepository
     function searchLab($labID);
 
     function getAllLab(): array;
+
+    function getAllMain(): array;
+
+    function getAllSub(): array;
 }

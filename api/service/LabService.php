@@ -21,6 +21,14 @@ switch ($method) {
                 $labArray = $labBO->getAllLabs();
                 echo json_encode($labArray);
                 break;
+            case "getAllMain" :
+                $mainArray = $labBO->getAllMain();
+                echo json_encode($mainArray);
+                break;
+            case "getAllSub" :
+                $subArray = $labBO->getAllSub();
+                echo json_encode($subArray);
+                break;
         }
         break;
 
@@ -32,7 +40,7 @@ switch ($method) {
                 $mainTopic = $_POST["mainTopic"];
                 $subTopic = $_POST["subTopic"];
                 $values = $_POST["values"];
-                $newLab = new Lab($patiensNIC,$mainTopic,$subTopic,$values);
+                $newLab = new Lab($patiensNIC, $mainTopic, $subTopic, $values);
                 $res = $labBO->addLab($newLab);
                 echo $res;
                 break;
@@ -42,7 +50,7 @@ switch ($method) {
                 $mainTopic = $_POST["mainTopic"];
                 $subTopic = $_POST["subTopic"];
                 $values = $_POST["values"];
-                $updateLab = new Lab($patiensNIC,$mainTopic,$subTopic,$values);
+                $updateLab = new Lab($patiensNIC, $mainTopic, $subTopic, $values);
                 $updateLab->setLabId($labID);
                 $res = $labBO->updateLab($updateLab);
                 echo $res;

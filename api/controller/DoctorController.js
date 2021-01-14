@@ -61,7 +61,6 @@ function addDoctor() {
 
 var updateDoctorId = '';
 
-
 function updateDoctor() {
     console.log(updateDoctorId);
     const firstName = $('#firstName').val();
@@ -114,6 +113,129 @@ function updateDoctor() {
         });
     }
 }
+
+function deleteRow() {
+    $('table tbody tr').click(function () {
+        const docId = $($(this).children()[0]).text();
+        deleteDoctor(docId);
+    });
+}
+
+function deleteDoctor(docId) {
+    swal({
+        title: "Are you sure?",
+        text: "Once deleted, you will not be able to recover this imaginary Data!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+    }).then((willDelete) => {
+        if (willDelete) {
+            const jsonConfig = {
+                url: "../../api/service/DoctorService.php?action=deleteDoc",
+                method: "GET",
+                async: true,
+                data: {
+                    docID: docId,
+                }
+            };
+            $.ajax(jsonConfig).done(function (res) {
+                if (res === "1") {
+                    swal("Poof! Your imaginary Data has been deleted!", {
+                        icon: "success",
+                    });
+                    clearFilledData();
+                } else {
+                    console.log(res);
+                    swal("Some thing wrong Your imaginary file is safe!");
+                    toastr["error"]("");
+                }
+            }).fail(function (xhr) {
+                swal(xhr);
+            });
+
+        } else {
+            swal("Your imaginary Data is safe!");
+        }
+    });
+}
+
+function searchDoctor() {
+    $('#doctorBody').empty();
+
+    const mobileNumber = $('#mobileNumber').val();
+
+    if (updateDoctorId !== "") {
+        const jsonConfig = {
+            url: "../../api/service/DoctorService.php?action=search",
+            method: "GET",
+            async: true,
+            data: {
+                docID: updateDoctorId
+            },
+            dataType: "JSON"
+        };
+
+        $.ajax(jsonConfig).done(function (res) {
+
+            $('#doctorBody').append(" <tr style='cursor: pointer'>\n" +
+                "                            <td id='docID'>" + res.doctor_id + "</td>\n" +
+                "                            <td>" + res.firstName + " " + res.lastName + "</td>\n" +
+                "                            <td>" + res.mNumber + "</td>\n" +
+                "                            <td>" + res.address + "</td>\n" +
+                "                            <td>" + res.conCharge + "</td>\n" +
+                "                            <td>" + res.education + "</td>\n" +
+                "                            <td>" + res.dob + "</td>\n" +
+                "                            <td>" + res.status + "</td>\n" +
+                "                            <td><i class='fas fa-edit' onclick='editRow()'></i>&nbsp;&nbsp;&nbsp; <i\n" +
+                "                                        class='fas fa-trash-alt' onclick='deleteRow()'></i></td>\n" +
+                "                        </tr>");
+            const id = document.getElementById('docID');
+            id.id = id.id + res.doctor_id;
+            searchClinic(res.clinic_id, res.doctor_id);
+
+        }).fail(function (xhr) {
+            console.log(xhr);
+        });
+    } else if (mobileNumber !== "") {
+        const jsonConfig = {
+            url: "../../api/service/DoctorService.php?action=searchByMNumber",
+            method: "GET",
+            async: true,
+            data: {
+                mobileNumber: mobileNumber
+            },
+            dataType: "JSON"
+        };
+
+        $.ajax(jsonConfig).done(function (res) {
+            console.log(res);
+            $('#doctorBody').append(" <tr style='cursor: pointer'>\n" +
+                "                            <td id='docID'>" + res.doctor_id + "</td>\n" +
+                "                            <td>" + res.firstName + " " + res.lastName + "</td>\n" +
+                "                            <td>" + res.mNumber + "</td>\n" +
+                "                            <td>" + res.address + "</td>\n" +
+                "                            <td>" + res.conCharge + "</td>\n" +
+                "                            <td>" + res.education + "</td>\n" +
+                "                            <td>" + res.dob + "</td>\n" +
+                "                            <td>" + res.status + "</td>\n" +
+                "                            <td><i class='fas fa-edit' onclick='editRow()'></i>&nbsp;&nbsp;&nbsp; <i\n" +
+                "                                        class='fas fa-trash-alt' onclick='deleteRow()'></i></td>\n" +
+                "                        </tr>");
+            const id = document.getElementById('docID');
+            id.id = id.id + res.doctor_id;
+            searchClinic(res.clinic_id, res.doctor_id);
+
+        }).fail(function (xhr) {
+            console.log(xhr);
+        });
+
+    } else {
+        swal("Warning!", "Please Input Doctor's Mobile Number to Search.!", "warning");
+        getAllDoctors();
+    }
+
+}
+
 
 function getAllDoctors() {
     $('#doctorBody').empty();

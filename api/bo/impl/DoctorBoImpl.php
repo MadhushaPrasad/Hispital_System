@@ -57,7 +57,11 @@ class DoctorBoImpl implements DoctorBo
 
     function searchDoctor($doctorID)
     {
-        // TODO: Implement searchDoctor() method.
+        $docRepo = new DoctorRepositoryImpl();
+        $connection = (new DBConnection())->getConnection();
+        $docRepo->setConnection($connection);
+        $doctor = $docRepo->searchDoctor($doctorID);
+        return $doctor;
     }
 
     function getAllDoctor()
@@ -67,5 +71,23 @@ class DoctorBoImpl implements DoctorBo
         $doctorRepo->setConnection($connection);
         $doctorArray = $doctorRepo->getAllDoctor();
         return $doctorArray;
+    }
+
+    function searchByDoctorName($firstName, $lastName)
+    {
+        $docRepo = new DoctorRepositoryImpl();
+        $connection = (new DBConnection())->getConnection();
+        $docRepo->setConnection($connection);
+        $doctor = $docRepo->searchByDoctorName($firstName, $lastName);
+        return $doctor;
+    }
+
+    function searchByDoctorMNumber($mobileNumber)
+    {
+        $docRepo = new DoctorRepositoryImpl();
+        $connection = (new DBConnection())->getConnection();
+        $docRepo->setConnection($connection);
+        $doctor = $docRepo->searchByDoctorMNumber($mobileNumber);
+        return $doctor;
     }
 }

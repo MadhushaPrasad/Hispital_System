@@ -3,15 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f8a74fa6-b356-43eb-8e73-a147b695347c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/bo/impl/ClinicBoImpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/bo/impl/ClinicBoImpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/bo/DoctorBo.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/bo/DoctorBo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/bo/impl/DoctorBoImpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/bo/impl/DoctorBoImpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controller/DashboardController.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controller/DashboardController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/controller/DoctorController.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controller/DoctorController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/repository/impl/ClinicRepositoryImpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/repository/impl/ClinicRepositoryImpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/service/ClinicService.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/service/ClinicService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/repository/DoctorRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/repository/DoctorRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/repository/impl/DoctorRepositoryImpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/repository/impl/DoctorRepositoryImpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/service/DoctorService.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/service/DoctorService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospitalDataBase.sql" beforeDir="false" afterPath="$PROJECT_DIR$/hospitalDataBase.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/Dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/Dashboard.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/pages/Doctor.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/Doctor.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,15 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/pages/Doctor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="87" column="99" selection-start-line="87" selection-start-column="99" selection-end-line="87" selection-end-column="99" />
-              <folding>
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="328">
+              <caret line="70" column="56" selection-start-line="70" selection-start-column="56" selection-end-line="70" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -47,28 +40,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/pages/Dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
+            <state relative-caret-position="2640">
               <caret line="110" column="22" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="22" />
-              <folding>
-                <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/controller/DoctorController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="109" column="30" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
+            <state relative-caret-position="102">
+              <caret line="161" column="24" selection-start-line="161" selection-start-column="24" selection-end-line="161" selection-end-column="24" />
               <folding>
+                <element signature="e#30#242#0" />
                 <element signature="n#!!block;n#addDoctor#0" />
+                <element signature="n#!!block;n#updateDoctor#0" />
+                <element signature="n#!!block;n#deleteRow#0" />
+                <element signature="n#!!block;n#deleteDoctor#0" />
+                <element signature="n#!!block;n#searchDoctor#0" />
+                <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
+                <element signature="e#434#440#0" expanded="true" />
+                <element signature="e#440#446#0" expanded="true" />
+                <element signature="e#446#452#0" expanded="true" />
+                <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
+                <element signature="e#434#440#0" expanded="true" />
+                <element signature="e#440#446#0" expanded="true" />
+                <element signature="e#446#452#0" expanded="true" />
                 <element signature="n#!!block;n#getAllDoctors#0" />
                 <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
-                <element signature="e#313#319#0" expanded="true" />
-                <element signature="e#319#325#0" expanded="true" />
-                <element signature="e#325#331#0" expanded="true" />
+                <element signature="e#434#440#0" expanded="true" />
+                <element signature="e#440#446#0" expanded="true" />
+                <element signature="e#446#452#0" expanded="true" />
                 <element signature="n#!!block;n#editRow#0" />
                 <element signature="n#!!block;n#getAllClinic#0" />
                 <element signature="n#!!block;n#searchClinic#0" />
@@ -81,83 +83,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/service/DoctorService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+            <state relative-caret-position="984">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/pages/Clinic.php">
+        <entry file="file://$PROJECT_DIR$/api/repository/DoctorRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="142" selection-start-line="142" selection-end-line="146" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/controller/DashboardController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="84" column="1" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
-              <folding>
-                <element signature="n#!!block;n#getAllAppointment#0" />
-                <element signature="n#!!block;n#getAllOutofStockmedic#0" />
-                <element signature="n#!!block;n#getAllDoctors#0" />
-                <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
-                <element signature="e#433#439#0" expanded="true" />
-                <element signature="e#439#445#0" expanded="true" />
-                <element signature="e#445#451#0" expanded="true" />
-                <element signature="n#!!block;n#searchClinic#0" />
-                <element signature="n#!!block;n#getAllClinic#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/controller/ClinicController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-72">
-              <caret line="145" column="1" lean-forward="true" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
-              <folding>
-                <element signature="n#!!block;n#getAllClinic#0" />
-                <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
-                <element signature="e#422#428#0" expanded="true" />
-                <element signature="e#428#434#0" expanded="true" />
-                <element signature="e#434#440#0" expanded="true" />
-                <element signature="n#!!block;n#clearFilledData#0" />
-                <element signature="n#!!block;n#deleteRow#0" />
-                <element signature="n#!!block;n#deleteClinic#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/repository/impl/DoctorRepositoryImpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
-              <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/bo/impl/DoctorBoImpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/repository/impl/ClinicRepositoryImpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+            <state relative-caret-position="96">
+              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -229,9 +165,6 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/assets/css/login.css" />
         <option value="$PROJECT_DIR$/api/model/Doctor.php" />
-        <option value="$PROJECT_DIR$/api/bo/DoctorBo.php" />
-        <option value="$PROJECT_DIR$/api/repository/DoctorRepository.php" />
-        <option value="$PROJECT_DIR$/api/repository/impl/DoctorRepositoryImpl.php" />
         <option value="$PROJECT_DIR$/api/controller/LabController.js" />
         <option value="$PROJECT_DIR$/api/bo/impl/ClinicBoImpl.php" />
         <option value="$PROJECT_DIR$/api/repository/impl/ClinicRepositoryImpl.php" />
@@ -240,8 +173,11 @@
         <option value="$PROJECT_DIR$/views/pages/Dashboard.php" />
         <option value="$PROJECT_DIR$/api/controller/ClinicController.js" />
         <option value="$PROJECT_DIR$/views/pages/Doctor.php" />
-        <option value="$PROJECT_DIR$/api/service/DoctorService.php" />
+        <option value="$PROJECT_DIR$/api/bo/DoctorBo.php" />
+        <option value="$PROJECT_DIR$/api/repository/DoctorRepository.php" />
+        <option value="$PROJECT_DIR$/api/repository/impl/DoctorRepositoryImpl.php" />
         <option value="$PROJECT_DIR$/api/bo/impl/DoctorBoImpl.php" />
+        <option value="$PROJECT_DIR$/api/service/DoctorService.php" />
         <option value="$PROJECT_DIR$/api/controller/DoctorController.js" />
       </list>
     </option>
@@ -265,7 +201,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -338,6 +273,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -430,7 +366,8 @@
       <workItem from="1610337195117" duration="606000" />
       <workItem from="1610447422461" duration="4927000" />
       <workItem from="1610535224279" duration="7039000" />
-      <workItem from="1610602499484" duration="9657000" />
+      <workItem from="1610602499484" duration="9744000" />
+      <workItem from="1610620072420" duration="4570000" />
     </task>
     <task id="LOCAL-00001" summary="clinic page finished">
       <created>1607691357693</created>
@@ -460,17 +397,24 @@
       <option name="project" value="LOCAL" />
       <updated>1610452206582</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Doctor add and update">
+      <created>1610612445607</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610612445607</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125926000" />
+    <option name="totallyTimeSpent" value="130583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22844176" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2322239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -513,7 +457,8 @@
     <MESSAGE value="clinic page All finished" />
     <MESSAGE value="Lab page All finished" />
     <MESSAGE value="Doctor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Doctor" />
+    <MESSAGE value="Doctor add and update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Doctor add and update" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -730,24 +675,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/bo/DoctorBo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/bo/impl/LabBoImpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="38" column="9" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="38" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/repository/DoctorRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -781,20 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/service/ClinicService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/bo/impl/ClinicBoImpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1488">
-          <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/model/Doctor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -802,17 +719,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/repository/impl/DoctorRepositoryImpl.php">
+    <entry file="file://$PROJECT_DIR$/views/pages/Dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+        <state relative-caret-position="2640">
+          <caret line="110" column="22" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/repository/impl/ClinicRepositoryImpl.php">
+    <entry file="file://$PROJECT_DIR$/views/pages/Clinic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+        <state relative-caret-position="3360">
+          <caret line="142" selection-start-line="142" selection-end-line="146" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -834,81 +751,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/pages/Dashboard.php">
+    <entry file="file://$PROJECT_DIR$/api/service/ClinicService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="110" column="22" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="22" />
-          <folding>
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="480">
+          <caret line="20" column="42" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="20" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/pages/Clinic.php">
+    <entry file="file://$PROJECT_DIR$/api/bo/impl/ClinicBoImpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="142" selection-start-line="142" selection-end-line="146" selection-end-column="53" />
+        <state relative-caret-position="365">
+          <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repository/impl/ClinicRepositoryImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="64" column="41" lean-forward="true" selection-start-line="63" selection-start-column="7" selection-end-line="64" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/controller/ClinicController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="145" column="1" lean-forward="true" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
+        <state relative-caret-position="384">
+          <caret line="175" column="26" selection-start-line="175" selection-start-column="26" selection-end-line="175" selection-end-column="26" />
           <folding>
+            <element signature="e#28#642#0" />
+            <element signature="n#!!block;n#addClinic#0" />
+            <element signature="n#!!block;n#updateClinic#0" />
             <element signature="n#!!block;n#getAllClinic#0" />
             <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
             <element signature="e#422#428#0" expanded="true" />
             <element signature="e#428#434#0" expanded="true" />
             <element signature="e#434#440#0" expanded="true" />
             <element signature="n#!!block;n#clearFilledData#0" />
+            <element signature="n#!!block;n#editRow#0" />
             <element signature="n#!!block;n#deleteRow#0" />
             <element signature="n#!!block;n#deleteClinic#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/service/DoctorService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/bo/impl/DoctorBoImpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/controller/DoctorController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="109" column="30" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
-          <folding>
-            <element signature="n#!!block;n#addDoctor#0" />
-            <element signature="n#!!block;n#getAllDoctors#0" />
-            <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
-            <element signature="e#313#319#0" expanded="true" />
-            <element signature="e#319#325#0" expanded="true" />
-            <element signature="e#325#331#0" expanded="true" />
-            <element signature="n#!!block;n#editRow#0" />
-            <element signature="n#!!block;n#getAllClinic#0" />
-            <element signature="n#!!block;n#searchClinic#0" />
-            <element signature="n#!!block;n#clearFilledData#0" />
+            <element signature="e#6554#6751#0" />
+            <element signature="e#6800#7649#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/pages/Doctor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="87" column="99" selection-start-line="87" selection-start-column="99" selection-end-line="87" selection-end-column="99" />
+        <state relative-caret-position="328">
+          <caret line="70" column="56" selection-start-line="70" selection-start-column="56" selection-end-line="70" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repository/DoctorRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/DoctorBo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/repository/impl/DoctorRepositoryImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="72" column="13" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
           <folding>
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#addDoctor#0;n#DoctorRepositoryImpl#0;n#!!top" />
+            <element signature="n#updateDoctor#0;n#DoctorRepositoryImpl#0;n#!!top" />
+            <element signature="n#deleteDoctor#0;n#DoctorRepositoryImpl#0;n#!!top" />
+            <element signature="n#searchDoctor#0;n#DoctorRepositoryImpl#0;n#!!top" />
+            <element signature="n#getAllDoctor#0;n#DoctorRepositoryImpl#0;n#!!top" />
+            <element signature="n#searchByDoctorName#0;n#DoctorRepositoryImpl#0;n#!!top" />
+            <element signature="n#searchByDoctorMNumber#0;n#DoctorRepositoryImpl#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bo/impl/DoctorBoImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+          <folding>
+            <element signature="n#addDoctor#0;n#DoctorBoImpl#0;n#!!top" />
+            <element signature="n#updateDoctor#0;n#DoctorBoImpl#0;n#!!top" />
+            <element signature="n#deleteDoctor#0;n#DoctorBoImpl#0;n#!!top" />
+            <element signature="n#searchDoctor#0;n#DoctorBoImpl#0;n#!!top" />
+            <element signature="n#getAllDoctor#0;n#DoctorBoImpl#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/service/DoctorService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controller/DoctorController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="161" column="24" selection-start-line="161" selection-start-column="24" selection-end-line="161" selection-end-column="24" />
+          <folding>
+            <element signature="e#30#242#0" />
+            <element signature="n#!!block;n#addDoctor#0" />
+            <element signature="n#!!block;n#updateDoctor#0" />
+            <element signature="n#!!block;n#deleteRow#0" />
+            <element signature="n#!!block;n#deleteDoctor#0" />
+            <element signature="n#!!block;n#searchDoctor#0" />
+            <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
+            <element signature="e#434#440#0" expanded="true" />
+            <element signature="e#440#446#0" expanded="true" />
+            <element signature="e#446#452#0" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
+            <element signature="e#434#440#0" expanded="true" />
+            <element signature="e#440#446#0" expanded="true" />
+            <element signature="e#446#452#0" expanded="true" />
+            <element signature="n#!!block;n#getAllDoctors#0" />
+            <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
+            <element signature="e#434#440#0" expanded="true" />
+            <element signature="e#440#446#0" expanded="true" />
+            <element signature="e#446#452#0" expanded="true" />
+            <element signature="n#!!block;n#editRow#0" />
+            <element signature="n#!!block;n#getAllClinic#0" />
+            <element signature="n#!!block;n#searchClinic#0" />
+            <element signature="n#!!block;n#clearFilledData#0" />
           </folding>
         </state>
       </provider>

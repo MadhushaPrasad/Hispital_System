@@ -5,30 +5,41 @@ require_once __DIR__ . "/../bo/impl/ClinicBoImpl.php";
 
 $method = $_SERVER["REQUEST_METHOD"];
 $docBO = new DoctorBoImpl();
-$clinBO = new ClinicBoImpl();
 
 switch ($method) {
     case "GET":
         $action = $_GET["action"];
         switch ($action) {
-            case "delete":
+            case "deleteDoc":
                 $docID = $_GET["docID"];
                 $res = $docBO->deleteDoctor($docID);
                 echo $res;
                 break;
 
             case "search":
+                $docID = $_GET["docID"];
+                $doctor = $docBO->searchDoctor($docID);
+                echo json_encode($doctor);
+                break;
+//
+//            case "searchByName":
+//                $firstName = $_GET["firstName"];
+//                $lastName = $_GET["lastName"];
+//                $doctor = $docBO->searchByDoctorName($firstName, $lastName);
+//                echo json_encode($doctor);
+//                break;
+
+            case "searchByMNumber":
+                $mobileNumber = $_GET["mobileNumber"];
+                $doctor = $docBO->searchByDoctorMNumber($mobileNumber);
+                echo json_encode($doctor);
                 break;
 
             case "getAllDoctor" :
                 $doctorArray = $docBO->getAllDoctor();
                 echo json_encode($doctorArray);
                 break;
-//
-//            case "getAllClinic" :
-//                $clinicArray = $clinBO->getAllClinic();
-//                echo json_encode($clinicArray);
-//                break;
+
         }
         break;
 

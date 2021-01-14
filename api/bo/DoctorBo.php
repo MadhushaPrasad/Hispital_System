@@ -12,5 +12,9 @@ interface DoctorBo
 
     function searchDoctor($doctorID);
 
+    function searchByDoctorName($firstName, $lastName);
+
+    function searchByDoctorMNumber($mobileNumber);
+
     function getAllDoctor();
 }

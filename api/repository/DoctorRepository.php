@@ -14,5 +14,9 @@ interface DoctorRepository
 
     function searchDoctor($doctorID);
 
+    function searchByDoctorName($firstName, $lastName);
+
+    function searchByDoctorMNumber($mobileNumber);
+
     function getAllDoctor(): array;
 }

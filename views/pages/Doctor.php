@@ -68,7 +68,9 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-sm-12 mt-md-2 mt-lg-0">
-                                    <button class="btn btnSearch" style="margin-top: 0!important;">Search</button>
+                                    <button type="button" class="btn btnSearch" style="margin-top: 0!important;"
+                                            onclick="searchDoctor()">Search
+                                    </button>
                                     <textarea placeholder="Address" class="form-control" id="address"
                                               name="Address"
                                               rows="3"></textarea>

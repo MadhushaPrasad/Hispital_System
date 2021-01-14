@@ -54,12 +54,25 @@ class DoctorRepositoryImpl implements DoctorRepository
 
     function searchDoctor($doctorID)
     {
-        // TODO: Implement searchDoctor() method.
+        $resultSet = $this->connection->query("select * from doctor where doctor_id='{$doctorID}'");
+        return $resultSet->fetch_assoc();
     }
 
     function getAllDoctor(): array
     {
         $resultSet = $this->connection->query("SELECT * FROM doctor");
         return $resultSet->fetch_all();
+    }
+
+    function searchByDoctorName($firstName, $lastName)
+    {
+        $resultSet = $this->connection->query("select * from doctor where firstName='{$firstName}' && lastName='{$lastName}'");
+        return $resultSet->fetch_assoc();
+    }
+
+    function searchByDoctorMNumber($mobileNumber)
+    {
+        $resultSet = $this->connection->query("select * from doctor where mNumber='{$mobileNumber}'");
+        return $resultSet->fetch_assoc();
     }
 }

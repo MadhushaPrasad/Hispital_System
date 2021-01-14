@@ -36,33 +36,33 @@ switch ($method) {
         $action = $_GET["action"];
         switch ($action) {
             case "saveDoc" :
-                $clinic_id = $_POST["patiensNIC"];
-                $firstName = $_POST["patiensNIC"];
-                $lastName = $_POST["patiensNIC"];
-                $address = $_POST["patiensNIC"];
-                $mNumber = $_POST["patiensNIC"];
-                $conCharge = $_POST["patiensNIC"];
-                $education = $_POST["patiensNIC"];
-                $dob = $_POST["patiensNIC"];
-                $status = $_POST["patiensNIC"];
+                $clinic_id = $_POST["clinicName"];
+                $firstName = $_POST["firstName"];
+                $lastName = $_POST["lastName"];
+                $address = $_POST["address"];
+                $mNumber = $_POST["mobileNumber"];
+                $conCharge = $_POST["consultancyCharge"];
+                $education = $_POST["education"];
+                $dob = $_POST["dob"];
+                $status = $_POST["status"];
                 $newDoc = new Doctor($clinic_id, $firstName, $lastName, $address, $mNumber, $conCharge, $education, $dob, $status);
                 $res = $docBO->addDoctor($newDoc);
                 echo $res;
                 break;
             case "update" :
 
-                $docID = $_POST["labID"];
-                $clinic_id = $_POST["patiensNIC"];
-                $firstName = $_POST["patiensNIC"];
-                $lastName = $_POST["patiensNIC"];
-                $address = $_POST["patiensNIC"];
-                $mNumber = $_POST["patiensNIC"];
-                $conCharge = $_POST["patiensNIC"];
-                $education = $_POST["patiensNIC"];
-                $dob = $_POST["patiensNIC"];
-                $status = $_POST["patiensNIC"];
+                $docID = $_POST["doctorID"];
+                $clinic_id = $_POST["clinicName"];
+                $firstName = $_POST["firstName"];
+                $lastName = $_POST["lastName"];
+                $address = $_POST["address"];
+                $mNumber = $_POST["mobileNumber"];
+                $conCharge = $_POST["consultancyCharge"];
+                $education = $_POST["education"];
+                $dob = $_POST["dob"];
+                $status = $_POST["status"];
                 $updateDoc = new Doctor($clinic_id, $firstName, $lastName, $address, $mNumber, $conCharge, $education, $dob, $status);
-                $updateDoc->setLabId($docID);
+                $updateDoc->setDoctorId($docID);
                 $res = $docBO->updateDoctor($updateDoc);
                 echo $res;
                 break;

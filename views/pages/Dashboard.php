@@ -76,19 +76,20 @@
                 </div>
 
                 <!--    On Working Doctors table div-->
-                <div class="row ml-lg-5 ml-md-2 mt-3 mb-5">
+                <div class="row ml-lg-5 ml-md-2 mt-3">
                     <h4 class="mt-3 mb-4">On Working Doctors</h4>
-                    <table class="table">
+                    <table class="table table-responsive">
                         <thead>
                         <tr>
                             <th scope="col">ID</th>
+                            <th scope="col">Clinic Name</th>
                             <th scope="col">Name</th>
                             <th scope="col">Mobile Number</th>
                             <th scope="col">Address</th>
                             <th scope="col">Consultancy Charge</th>
                             <th scope="col">Education</th>
-                            <th scope="col">Clinic</th>
                             <th scope="col">Date Of Birth</th>
+                            <th scope="col">Status</th>
                         </tr>
                         </thead>
                         <tbody id="doctorBody">

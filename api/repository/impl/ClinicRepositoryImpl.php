@@ -61,7 +61,8 @@ class ClinicRepositoryImpl implements ClinicRepository
 
     function searchClinic($clinicID)
     {
-        // TODO: Implement searchClinic() method.
+        $resultSet = $this->connection->query("select * from clinic where clinic_id='{$clinicID}'");
+        return $resultSet->fetch_assoc();
     }
 
     function getAllClinic(): array

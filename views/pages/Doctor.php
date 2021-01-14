@@ -17,7 +17,10 @@
 
     <link rel="stylesheet" href="../../assets/css/sidebar.css">
 
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 <body>
@@ -36,12 +39,15 @@
                         <form id="mail-form" method="post" action="">
                             <div class="row mb-2">
                                 <div class="col-lg-6 col-sm-12">
-                                    <input type="text" class="form-control" placeholder="First name" name="First_name">
-                                    <input type="text" class="form-control mt-2" placeholder="Last name"
+                                    <input type="text" id="firstName" class="form-control" placeholder="First name"
+                                           name="First_name">
+                                    <input type="text" id="lastName" class="form-control mt-2" placeholder="Last name"
                                            name="Last_name">
-                                    <input type="text" class="form-control mt-2" placeholder="Mobile Number"
+                                    <input type="text" id="mobileNumber" class="form-control mt-2"
+                                           placeholder="Mobile Number"
                                            name="mobile">
-                                    <input type="text" class="form-control mt-2" placeholder="Consultancy Charge"
+                                    <input type="text" id="consultancyCharge" class="form-control mt-2"
+                                           placeholder="Consultancy Charge"
                                            name="charge">
                                     <div class="row">
                                         <div class="col-lg-5 col-sm-12 input-group mt-2 pl-0 ml-3">
@@ -54,7 +60,9 @@
                                                 <input class="form-control" type="text" onfocus="(this.type='date')"
                                                        placeholder="Date Of Birth"
                                                        name="stAge"
-                                                       max="2020-12-31">
+                                                       max="2020-12-31"
+                                                       id="dob"
+                                                >
                                             </div>
                                         </div>
                                     </div>
@@ -64,7 +72,7 @@
                                     <textarea placeholder="Address" class="form-control" id="address"
                                               name="Address"
                                               rows="3"></textarea>
-                                    <input type="text" class="form-control mt-2" placeholder="Education"
+                                    <input type="text" id="education" class="form-control mt-2" placeholder="Education"
                                            name="eduction">
                                     <div class="col-lg-5 col-sm-12 input-group mt-2 pl-0">
                                         <select class="custom-select" id="status">
@@ -77,8 +85,8 @@
                             </div>
                             <div class="col-lg-12 d-flex justify-content-around mt-4">
                                 <button class="btn btnCancel">Cancel</button>
-                                <button class="btn btnUpdate">update</button>
-                                <button class="btn btnCreate">Create</button>
+                                <button type="button" class="btn btnUpdate" onclick="updateDoctor()">update</button>
+                                <button type="button" class="btn btnCreate" onclick="addDoctor()">Add</button>
                             </div>
                         </form>
                     </div>
@@ -88,16 +96,16 @@
                 <!--    On Working Doctors table div-->
                 <div class="row ml-lg-5 ml-md-2 mt-3">
                     <h4 class="mt-3 mb-4">On Working Doctors</h4>
-                    <table class="table">
+                    <table class="table table-responsive">
                         <thead>
                         <tr>
                             <th scope="col">ID</th>
+                            <th scope="col">Clinic Name</th>
                             <th scope="col">Name</th>
                             <th scope="col">Mobile Number</th>
                             <th scope="col">Address</th>
                             <th scope="col">Consultancy Charge</th>
                             <th scope="col">Education</th>
-                            <th scope="col">Clinic</th>
                             <th scope="col">Date Of Birth</th>
                             <th scope="col">Status</th>
                         </tr>
@@ -125,7 +133,10 @@
 </div>
 
 <script src="../../assets/js/jquery.js"></script>
-<script src="../../assets/js/bootstrap.js"></script>
+<script src="../../assets/js/popper.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/mdb.min.js"></script>
+<script src="../../assets/js/toastr.min.js"></script>
 <script src="../../assets/js/sidebar.js" type="application/javascript"></script>
 <script src="../../api/controller/DoctorController.js" type="application/javascript"></script>
 </body>

@@ -57,7 +57,11 @@ class ClinicBoImpl implements ClinicBo
 
     function searchClinic($clinicID)
     {
-        // TODO: Implement searchClinic() method.
+        $clinicRepo = new ClinicRepositoryImpl();
+        $connection = (new DBConnection())->getConnection();
+        $clinicRepo->setConnection($connection);
+        $clinic = $clinicRepo->searchClinic($clinicID);
+        return $clinic;
     }
 
     function getAllClinic()

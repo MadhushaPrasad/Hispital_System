@@ -25,7 +25,7 @@ CREATE TABLE doctor(
 	conCharge DECIMAL(10,2) NOT NULL,
 	education VARCHAR(100) NOT NULL,
 	dob DATE NOT NULL,
-	status VARCHAR(100) NOT NULL DEFAULT "Pending",
+	status VARCHAR(100) NOT NULL DEFAULT "Off",
 	CONSTRAINT PRIMARY KEY(doctor_id),
 	CONSTRAINT FOREIGN KEY(clinic_id) REFERENCES clinic(clinic_id)
 	ON DELETE CASCADE ON UPDATE CASCADE
@@ -126,4 +126,7 @@ CREATE TABLE prescription(
 	ON DELETE CASCADE ON UPDATE CASCADE
 );
 
+
+UPDATE doctor SET doctor_id=1,clinic_id=1,firstName="Madhusha",lastName="Prasad",address="43/2 Nawajanapadaya,gamagoda,kaluthara South",
+mNumber="0764727839",conCharge=1500,education="PHD",dob="1999-04-13",status="1" WHERE doctor_id=1;
 

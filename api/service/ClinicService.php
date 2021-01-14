@@ -16,7 +16,11 @@ switch ($method) {
                 break;
 
             case "search":
+                $clinicID = $_GET["clinicID"];
+                $clinic = $clinicBO->searchClinic($clinicID);
+                echo json_encode($clinic);
                 break;
+
             case "getAll" :
                 $clinicArray = $clinicBO->getAllClinic();
                 echo json_encode($clinicArray);

@@ -33,7 +33,7 @@ class DoctorBoImpl implements DoctorBo
         $updateDoc = new Doctor($doctor->getClinicId(), $doctor->getFirstName(), $doctor->getLastName(),
             $doctor->getAddress(), $doctor->getMNumber(), $doctor->getConCharge(), $doctor->getEducation(),
             $doctor->getDob(), $doctor->getStatus());
-        $updateDoc->setClinicId($doctor->getDoctorId());
+        $updateDoc->setDoctorId($doctor->getDoctorId());
         $res = $docRepo->updateDoctor($updateDoc);
         if ($res) {
             return true;
